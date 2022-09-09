@@ -15,9 +15,7 @@ class Quartile3:
 
     def calc(self) -> list[str]:
         students = list(sorted(map(self.get_rating, self.data.items()),
-                               key=itemgetter(1)))
-
-        # print(students)
+                               key=itemgetter(1), reverse=True))
 
         fifty = len(students) // 2
         quarter = fifty // 2
