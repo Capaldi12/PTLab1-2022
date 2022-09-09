@@ -4,6 +4,7 @@ import os.path
 import sys
 
 from CalcRating import CalcRating
+from Quartile3 import Quartile3
 from TextDataReader import TextDataReader
 from JsonReader import JsonReader
 
@@ -32,6 +33,9 @@ def main():
 
     rating = CalcRating(students).calc()
     print("Rating: ", rating)
+
+    quartile3 = Quartile3(students).calc()
+    print("3rd quartile: ", quartile3)
 
 
 if __name__ == "__main__":
