@@ -14,4 +14,3 @@ class JsonReader(DataReader):
 
         return {name: [(subject, score) for subject, score in scores.items()]
                 for name, scores in data.items()}
-
